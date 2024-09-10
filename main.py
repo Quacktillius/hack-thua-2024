@@ -40,7 +40,7 @@ class Board():
       self.moveBlock(movesString[i*2:i*2+2])
   
   def getString(self):
-
+    return ''.join([item for row in self.board for item in row])
 
 
 @app.get("/")
