@@ -48,8 +48,8 @@ async def root():
     return {"message": "Hello World, should be working fine."}
 
 class KlotskyInput(BaseModel):
-    board: string,
-    moves: string
+    board: str
+    moves: str
 
 @app.post("/klotski")
 def klotsky(testCases: list[KlotskyInput]):
